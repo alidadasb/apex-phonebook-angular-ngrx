@@ -1,0 +1,4 @@
+<h4>List of Contacts</h4>
+<div *ngFor="let contact of contacts$ | async; let i=index">
+  <span>{{contact.id}}</span> {{contact.firstName}}, {{contact.lastName}}, {{contact.email}}
+</div>
